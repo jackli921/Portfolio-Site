@@ -492,6 +492,7 @@ h2::after {
     /* list-style-type: square; */
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
+    
 }
 
 .work__code {
