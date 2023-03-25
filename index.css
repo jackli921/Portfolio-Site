@@ -215,6 +215,11 @@ button:hover{
     color: var(--pink);
 }
 
+
+.handwriting-text{
+    font-family: 'Delicious Handrawn', cursive;
+}
+
 .btn{
     position: relative;
     display: inline-block;
@@ -429,6 +434,7 @@ button{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    padding: 0 0.5em;
 }
 
 .header__text p {
