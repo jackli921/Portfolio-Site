@@ -644,9 +644,7 @@ h2::after {
     margin-right: var(--gutter-small);
 }
 
-.footer__social-link-item img:hover{
-    background-color: var(--pink);
-}
+
 
 .footer__social-image {
     height: 4rem;
