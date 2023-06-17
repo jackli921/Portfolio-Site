@@ -42,12 +42,3 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-// copy email to clipboard
-
-const copyEmailButton = document.querySelector('#copy-email-button')
-
-copyEmailButton.addEventListener('click', ()=>{
-  navigator.clipboard.writeText('li.jack0707@gmail.com')
-  alert('Thanks! Looking forward to hearing from you!')
-})
