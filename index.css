@@ -419,6 +419,13 @@ button{
 /* ----- Header ----- */
 /* --------------------------------------- */
 
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em
+}
+
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
         url('./images/header.jpg');
