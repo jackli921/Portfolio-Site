@@ -192,6 +192,12 @@ a {
     outline: 2px solid transparent;
 }
 
+a:hover{
+    text-decoration: none;
+    /* Remove underlines */
+    color: inherit;
+    /* Inherit text color from parent element */
+}
 ::-moz-focus-inner {
     border: 0;
 }
@@ -208,10 +214,16 @@ body:not(.user-is-tabbing) a:focus {
 
 .link:hover {
     color: var(--pink);
+    
 }
 
 button:hover{
     color: var(--pink);
+    
+}
+
+.resume{
+    font-size: 1em;
 }
 
 
@@ -419,6 +431,17 @@ button{
 /* ----- Header ----- */
 /* --------------------------------------- */
 
+.carousel-item p {
+    margin-bottom: 0;
+    background-color: rgba(128, 128, 128, 0.6);
+    
+}
+
+.carousel-caption h4{
+    background-color: rgba(128, 128, 128, 0.6);
+    padding-bottom: 0.5em;
+}
+
 .contact-container{
     display: flex;
     justify-content: center;
@@ -457,6 +480,10 @@ button{
 
     .header__text p {
         transform: scale(.8);
+    }
+
+    .contact-container{
+        flex-direction: column;
     }
 }
 
@@ -629,6 +656,11 @@ h2::after {
 /* ----- Contact ----- */
 /* --------------------------------------- */
 
+.social-media-icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
 
 /* --------------------------------------- */
 /* ----- Footer ----- */
@@ -639,9 +671,13 @@ h2::after {
     padding: var(--gutter-medium) 0 var(--gutter-normal);
 }
 
-.footer__social-links {
+.footer__social-links-top {
     display: flex;
-    justify-content: center;
+    padding: var(--gutter-normal) 0;
+    list-style: none;
+}
+
+.footer__social-links {
     padding: var(--gutter-normal) 0;
     list-style: none;
 }
@@ -649,8 +685,6 @@ h2::after {
 .footer__social-link-item:not(:last-of-type) {
     margin-right: var(--gutter-small);
 }
-
-
 
 .footer__social-image {
     height: 4rem;
@@ -676,6 +710,17 @@ h2::after {
 
 }
 
+@media(max-width: 900px) {
+    .row {
+            display: flex;
+            flex-direction: column;
+        }
+    .footer__social-links-top{
+        justify-content: center;
+        padding: 0;
+    }
+}
+
 @media(min-width: 700px) {
 
     body {
@@ -684,7 +729,6 @@ h2::after {
     p{
         font-size: 2.1rem;
     }
-
 }
 
 @media(min-width:900px){
@@ -702,9 +746,7 @@ h2::after {
         display: flex;
         justify-content: space-between;
     }
-    .footer__social-links{
-        justify-content: left;
-    }
+
 }
 
 @media(min-width: 1024px) {
